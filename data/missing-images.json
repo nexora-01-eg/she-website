@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-10-02T01:39:17.332Z",
+  "rule": "Launch minimum = one front image per variant. Angles optional; never render empty/broken slots.",
+  "confirmedFronts": 0,
+  "note": "No seed variant has a CONFIRMED front (seed codes differ from real zip codes). Shop shows family+color illustrative images with badge; placeholders elsewhere.",
+  "familyColorsWithFront": {
+    "bags": [
+      "white",
+      "black",
+      "gold",
+      "silver",
+      "beige",
+      "brown",
+      "burgundy"
+    ],
+    "shoes": [
+      "beige",
+      "black",
+      "brown",
+      "burgundy",
+      "white"
+    ]
+  },
+  "cellsWithoutFamilyColorImage": [
+    {
+      "subsection": "soiree-bags",
+      "color": "denim",
+      "pieces": 2
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "denim",
+      "pieces": 1
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "denim",
+      "pieces": 10
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "gold",
+      "pieces": 14
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "silver",
+      "pieces": 5
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "denim",
+      "pieces": 4
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "gold",
+      "pieces": 6
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "silver",
+      "pieces": 2
+    },
+    {
+      "subsection": "ballerina",
+      "color": "denim",
+      "pieces": 4
+    },
+    {
+      "subsection": "ballerina",
+      "color": "gold",
+      "pieces": 6
+    },
+    {
+      "subsection": "ballerina",
+      "color": "silver",
+      "pieces": 2
+    },
+    {
+      "subsection": "sneakers",
+      "color": "denim",
+      "pieces": 11
+    },
+    {
+      "subsection": "sneakers",
+      "color": "gold",
+      "pieces": 13
+    },
+    {
+      "subsection": "sneakers",
+      "color": "silver",
+      "pieces": 5
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "denim",
+      "pieces": 4
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "gold",
+      "pieces": 6
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "silver",
+      "pieces": 2
+    }
+  ],
+  "realCodesWithFront": [
+    "SBJ752",
+    "SBJ779",
+    "SBJ781",
+    "SBJ787",
+    "SBJ793",
+    "SBJ868",
+    "SBJ903",
+    "SBJ932",
+    "SBJ941",
+    "SBS612",
+    "SBS613",
+    "SBS614",
+    "SBS636",
+    "SBS647",
+    "SBS685",
+    "SBS686",
+    "SBS690",
+    "SBS774",
+    "SE-249",
+    "SE-484",
+    "SE-500",
+    "SE-501",
+    "SSS-5002",
+    "SX-245",
+    "SX-247",
+    "SXS-223"
+  ]
+}

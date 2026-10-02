@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Deps
+node_modules
+
+# Next
+.next
+out
+dist
+
+# Env
+*.local
+.env*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Data snapshots (keep latest only, rollback kept server-side)
+data/snapshots/
+
+# Product originals live OUTSIDE git (491MB). Recreate locally: npm run link-images
+# Junction target: D:\BAGS SBS\products-staging (extracted BAGS SBS.zip)
+public/products/
+data/orders/

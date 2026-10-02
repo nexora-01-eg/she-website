@@ -1,0 +1,1261 @@
+{
+  "generatedAt": "2026-10-02T01:39:17.308Z",
+  "totalFiles": 132,
+  "coverage": [
+    {
+      "realCode": "SBJ752",
+      "files": 3,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ779",
+      "files": 3,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ781",
+      "files": 3,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ787",
+      "files": 4,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "detail"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ793",
+      "files": 4,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "detail"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ868",
+      "files": 3,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ903",
+      "files": 3,
+      "colors": [
+        "white"
+      ],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "detail"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ932",
+      "files": 2,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBJ941",
+      "files": 2,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS612",
+      "files": 5,
+      "colors": [
+        "silver",
+        "gold"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS613",
+      "files": 5,
+      "colors": [
+        "black",
+        "gold",
+        "silver"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS614",
+      "files": 5,
+      "colors": [
+        "black",
+        "gold",
+        "silver"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS636",
+      "files": 5,
+      "colors": [
+        "black",
+        "gold",
+        "silver"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS647",
+      "files": 8,
+      "colors": [],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS685",
+      "files": 8,
+      "colors": [
+        "black",
+        "gold",
+        "silver"
+      ],
+      "kinds": [
+        "interior",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS686",
+      "files": 5,
+      "colors": [
+        "black",
+        "gold",
+        "silver"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS690",
+      "files": 8,
+      "colors": [],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SBS774",
+      "files": 8,
+      "colors": [],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SE-249",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SE-484",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SE-500",
+      "files": 15,
+      "colors": [
+        "beige",
+        "black",
+        "brown",
+        "burgundy",
+        "white"
+      ],
+      "kinds": [
+        "angles4",
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SE-501",
+      "files": 15,
+      "colors": [
+        "black",
+        "burgundy",
+        "white",
+        "beige"
+      ],
+      "kinds": [
+        "other",
+        "front",
+        "lifestyle"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SSS-5002",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SX-245",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SX-247",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    },
+    {
+      "realCode": "SXS-223",
+      "files": 3,
+      "colors": [],
+      "kinds": [
+        "front",
+        "lifestyle",
+        "angles4"
+      ],
+      "hasFront": true
+    }
+  ],
+  "files": [
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ752.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ752.png",
+      "realCode": "SBJ752",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ779.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ779.png",
+      "realCode": "SBJ779",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ781.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ781.png",
+      "realCode": "SBJ781",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ787.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ787.png",
+      "realCode": "SBJ787",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ793.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ793.png",
+      "realCode": "SBJ793",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ868.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ868.png",
+      "realCode": "SBJ868",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ903.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ903.png",
+      "realCode": "SBJ903",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ932.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ932.png",
+      "realCode": "SBJ932",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ941.png",
+      "url": "/products/she/bags-SBJ/DENIM_Hero_Images_9_Models/SBJ941.png",
+      "realCode": "SBJ941",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ752/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ752/01_lifestyle.png",
+      "realCode": "SBJ752",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ752/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ752/02_product_white.png",
+      "realCode": "SBJ752",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ779/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ779/01_lifestyle.png",
+      "realCode": "SBJ779",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ779/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ779/02_product_white.png",
+      "realCode": "SBJ779",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ781/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ781/01_lifestyle.png",
+      "realCode": "SBJ781",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ781/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ781/02_product_white.png",
+      "realCode": "SBJ781",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ787/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ787/01_lifestyle.png",
+      "realCode": "SBJ787",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ787/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ787/02_product_white.png",
+      "realCode": "SBJ787",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ787/03_detail_white.png",
+      "url": "/products/she/bags-SBJ/SBJ787/03_detail_white.png",
+      "realCode": "SBJ787",
+      "color": "white",
+      "kind": "detail"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ793/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ793/01_lifestyle.png",
+      "realCode": "SBJ793",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ793/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ793/02_product_white.png",
+      "realCode": "SBJ793",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ793/03_detail_white.png",
+      "url": "/products/she/bags-SBJ/SBJ793/03_detail_white.png",
+      "realCode": "SBJ793",
+      "color": "white",
+      "kind": "detail"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ868/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ868/01_lifestyle.png",
+      "realCode": "SBJ868",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ868/02_product_white.png",
+      "url": "/products/she/bags-SBJ/SBJ868/02_product_white.png",
+      "realCode": "SBJ868",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ903/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ903/01_lifestyle.png",
+      "realCode": "SBJ903",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ903/03_detail_white.png",
+      "url": "/products/she/bags-SBJ/SBJ903/03_detail_white.png",
+      "realCode": "SBJ903",
+      "color": "white",
+      "kind": "detail"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ932/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ932/01_lifestyle.png",
+      "realCode": "SBJ932",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/bags-SBJ/SBJ941/01_lifestyle.png",
+      "url": "/products/she/bags-SBJ/SBJ941/01_lifestyle.png",
+      "realCode": "SBJ941",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/612/SBS612_black_from_silver.png",
+      "url": "/products/she/evening-SBS/612/SBS612_black_from_silver.png",
+      "realCode": "SBS612",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/612/SBS612_gold_IMG6260.png",
+      "url": "/products/she/evening-SBS/612/SBS612_gold_IMG6260.png",
+      "realCode": "SBS612",
+      "color": "gold",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/612/SBS612_silver_IMG6255.png",
+      "url": "/products/she/evening-SBS/612/SBS612_silver_IMG6255.png",
+      "realCode": "SBS612",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/613/SBS613_black_IMG6240.png",
+      "url": "/products/she/evening-SBS/613/SBS613_black_IMG6240.png",
+      "realCode": "SBS613",
+      "color": "black",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/613/SBS613_gold_IMG6244.png",
+      "url": "/products/she/evening-SBS/613/SBS613_gold_IMG6244.png",
+      "realCode": "SBS613",
+      "color": "gold",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/613/SBS613_silver_IMG248.jpg",
+      "url": "/products/she/evening-SBS/613/SBS613_silver_IMG248.jpg",
+      "realCode": "SBS613",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/614/SBS614_black_individual.png",
+      "url": "/products/she/evening-SBS/614/SBS614_black_individual.png",
+      "realCode": "SBS614",
+      "color": "black",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/614/SBS614_champagne_gold_individual.png",
+      "url": "/products/she/evening-SBS/614/SBS614_champagne_gold_individual.png",
+      "realCode": "SBS614",
+      "color": "gold",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/614/SBS614_silver_individual.png",
+      "url": "/products/she/evening-SBS/614/SBS614_silver_individual.png",
+      "realCode": "SBS614",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/636/SBS636_black_IMG6228 (1).png",
+      "url": "/products/she/evening-SBS/636/SBS636_black_IMG6228%20(1).png",
+      "realCode": "SBS636",
+      "color": "black",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/636/SBS636_Gold_IMG6228 (2).png",
+      "url": "/products/she/evening-SBS/636/SBS636_Gold_IMG6228%20(2).png",
+      "realCode": "SBS636",
+      "color": "gold",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/636/SBS636_silver_IMG6228 (3).png",
+      "url": "/products/she/evening-SBS/636/SBS636_silver_IMG6228%20(3).png",
+      "realCode": "SBS636",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6188_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6188_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6192_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6192_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6193_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6193_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6194_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6194_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6196_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6196_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/647/SBS647_6197_watermarked.png",
+      "url": "/products/she/evening-SBS/647/SBS647_6197_watermarked.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/685/01_SBS685_black_interior.png",
+      "url": "/products/she/evening-SBS/685/01_SBS685_black_interior.png",
+      "realCode": "SBS685",
+      "color": "black",
+      "kind": "interior"
+    },
+    {
+      "file": "she/evening-SBS/685/01_SBS685_black_product.png",
+      "url": "/products/she/evening-SBS/685/01_SBS685_black_product.png",
+      "realCode": "SBS685",
+      "color": "black",
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/685/02_SBS685_gold_interior.png",
+      "url": "/products/she/evening-SBS/685/02_SBS685_gold_interior.png",
+      "realCode": "SBS685",
+      "color": "gold",
+      "kind": "interior"
+    },
+    {
+      "file": "she/evening-SBS/685/02_SBS685_gold_product.png",
+      "url": "/products/she/evening-SBS/685/02_SBS685_gold_product.png",
+      "realCode": "SBS685",
+      "color": "gold",
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/685/03_SBS685_silver_interior.png",
+      "url": "/products/she/evening-SBS/685/03_SBS685_silver_interior.png",
+      "realCode": "SBS685",
+      "color": "silver",
+      "kind": "interior"
+    },
+    {
+      "file": "she/evening-SBS/685/03_SBS685_silver_product.png",
+      "url": "/products/she/evening-SBS/685/03_SBS685_silver_product.png",
+      "realCode": "SBS685",
+      "color": "silver",
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/686/SBS686_black_IMG6224.png",
+      "url": "/products/she/evening-SBS/686/SBS686_black_IMG6224.png",
+      "realCode": "SBS686",
+      "color": "black",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/686/SBS686_gold_IMG6222.png",
+      "url": "/products/she/evening-SBS/686/SBS686_gold_IMG6222.png",
+      "realCode": "SBS686",
+      "color": "gold",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/686/SBS686_silver_IMG6220.png",
+      "url": "/products/she/evening-SBS/686/SBS686_silver_IMG6220.png",
+      "realCode": "SBS686",
+      "color": "silver",
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6201_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6201_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6202_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6202_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6203_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6203_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6204_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6204_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6205_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6205_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/690/SBS690_6206_watermarked.png",
+      "url": "/products/she/evening-SBS/690/SBS690_6206_watermarked.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6208_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6208_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6211_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6211_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6212_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6212_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6215_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6215_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6216_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6216_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/774/SBS774_6219_watermarked.png",
+      "url": "/products/she/evening-SBS/774/SBS774_6219_watermarked.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/evening-SBS/HERO/612_hero.png",
+      "url": "/products/she/evening-SBS/HERO/612_hero.png",
+      "realCode": "SBS612",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/613_hero.png",
+      "url": "/products/she/evening-SBS/HERO/613_hero.png",
+      "realCode": "SBS613",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/614_hero.png",
+      "url": "/products/she/evening-SBS/HERO/614_hero.png",
+      "realCode": "SBS614",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/636_hero.png",
+      "url": "/products/she/evening-SBS/HERO/636_hero.png",
+      "realCode": "SBS636",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/647_hero.png",
+      "url": "/products/she/evening-SBS/HERO/647_hero.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/685_hero.png",
+      "url": "/products/she/evening-SBS/HERO/685_hero.png",
+      "realCode": "SBS685",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/686_hero.png",
+      "url": "/products/she/evening-SBS/HERO/686_hero.png",
+      "realCode": "SBS686",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/690_hero.png",
+      "url": "/products/she/evening-SBS/HERO/690_hero.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/HERO/774_hero.png",
+      "url": "/products/she/evening-SBS/HERO/774_hero.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/612_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/612_campaign.png",
+      "realCode": "SBS612",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/613_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/613_campaign.png",
+      "realCode": "SBS613",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/614_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/614_campaign.png",
+      "realCode": "SBS614",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/636_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/636_campaign.png",
+      "realCode": "SBS636",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/647_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/647_campaign.png",
+      "realCode": "SBS647",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/685_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/685_campaign.png",
+      "realCode": "SBS685",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/686_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/686_campaign.png",
+      "realCode": "SBS686",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/690_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/690_campaign.png",
+      "realCode": "SBS690",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/evening-SBS/SHE_campaign_final/774_campaign.png",
+      "url": "/products/she/evening-SBS/SHE_campaign_final/774_campaign.png",
+      "realCode": "SBS774",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-500/background white proudact/e500_beige_four_angles.png",
+      "url": "/products/she/sets-SE/SE-500/background%20white%20proudact/e500_beige_four_angles.png",
+      "realCode": "SE-500",
+      "color": "beige",
+      "kind": "angles4"
+    },
+    {
+      "file": "she/sets-SE/SE-500/background white proudact/e500_black_four_angles.png",
+      "url": "/products/she/sets-SE/SE-500/background%20white%20proudact/e500_black_four_angles.png",
+      "realCode": "SE-500",
+      "color": "black",
+      "kind": "angles4"
+    },
+    {
+      "file": "she/sets-SE/SE-500/background white proudact/e500_brown_four_angles.png",
+      "url": "/products/she/sets-SE/SE-500/background%20white%20proudact/e500_brown_four_angles.png",
+      "realCode": "SE-500",
+      "color": "brown",
+      "kind": "angles4"
+    },
+    {
+      "file": "she/sets-SE/SE-500/background white proudact/e500_burgundy_four_angles.png",
+      "url": "/products/she/sets-SE/SE-500/background%20white%20proudact/e500_burgundy_four_angles.png",
+      "realCode": "SE-500",
+      "color": "burgundy",
+      "kind": "angles4"
+    },
+    {
+      "file": "she/sets-SE/SE-500/background white proudact/e500_white_four_angles.png",
+      "url": "/products/she/sets-SE/SE-500/background%20white%20proudact/e500_white_four_angles.png",
+      "realCode": "SE-500",
+      "color": "white",
+      "kind": "angles4"
+    },
+    {
+      "file": "she/sets-SE/SE-500/HERO PHOTO/ChatGPT Image Sep 30, 2026, 03_33_41 PM.png",
+      "url": "/products/she/sets-SE/SE-500/HERO%20PHOTO/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_33_41%20PM.png",
+      "realCode": "SE-500",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-500/HERO PHOTO/hero_se500_black.png",
+      "url": "/products/she/sets-SE/SE-500/HERO%20PHOTO/hero_se500_black.png",
+      "realCode": "SE-500",
+      "color": "black",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-500/HERO PHOTO/hero_se500_brown.png",
+      "url": "/products/she/sets-SE/SE-500/HERO%20PHOTO/hero_se500_brown.png",
+      "realCode": "SE-500",
+      "color": "brown",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-500/HERO PHOTO/hero_se500_white.png",
+      "url": "/products/she/sets-SE/SE-500/HERO%20PHOTO/hero_se500_white.png",
+      "realCode": "SE-500",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-500/HERO PHOTO/SHE_SE-500_Hero.png",
+      "url": "/products/she/sets-SE/SE-500/HERO%20PHOTO/SHE_SE-500_Hero.png",
+      "realCode": "SE-500",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-500/LIFE STILY PHOTO/she_se500_beige_fashion.png",
+      "url": "/products/she/sets-SE/SE-500/LIFE%20STILY%20PHOTO/she_se500_beige_fashion.png",
+      "realCode": "SE-500",
+      "color": "beige",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-500/LIFE STILY PHOTO/she_se500_black_fashion.png",
+      "url": "/products/she/sets-SE/SE-500/LIFE%20STILY%20PHOTO/she_se500_black_fashion.png",
+      "realCode": "SE-500",
+      "color": "black",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-500/LIFE STILY PHOTO/she_se500_brown_fashion.png",
+      "url": "/products/she/sets-SE/SE-500/LIFE%20STILY%20PHOTO/she_se500_brown_fashion.png",
+      "realCode": "SE-500",
+      "color": "brown",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-500/LIFE STILY PHOTO/she_se500_burgundy_fashion.png",
+      "url": "/products/she/sets-SE/SE-500/LIFE%20STILY%20PHOTO/she_se500_burgundy_fashion.png",
+      "realCode": "SE-500",
+      "color": "burgundy",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-500/LIFE STILY PHOTO/she_se500_white_fashion.png",
+      "url": "/products/she/sets-SE/SE-500/LIFE%20STILY%20PHOTO/she_se500_white_fashion.png",
+      "realCode": "SE-500",
+      "color": "white",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-501/hero/ChatGPT Image Sep 30, 2026, 03_13_19 PM.png",
+      "url": "/products/she/sets-SE/SE-501/hero/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_13_19%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/hero/ChatGPT Image Sep 30, 2026, 03_14_04 PM.png",
+      "url": "/products/she/sets-SE/SE-501/hero/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_14_04%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/hero/set15_black_hero.jpg",
+      "url": "/products/she/sets-SE/SE-501/hero/set15_black_hero.jpg",
+      "realCode": "SE-501",
+      "color": "black",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-501/hero/set15_burgundy_hero.jpg",
+      "url": "/products/she/sets-SE/SE-501/hero/set15_burgundy_hero.jpg",
+      "realCode": "SE-501",
+      "color": "burgundy",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-501/hero/set15_white_hero.jpg",
+      "url": "/products/she/sets-SE/SE-501/hero/set15_white_hero.jpg",
+      "realCode": "SE-501",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-501/life/ChatGPT Image Sep 30, 2026, 03_17_19 PM.png",
+      "url": "/products/she/sets-SE/SE-501/life/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_17_19%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/life/ChatGPT Image Sep 30, 2026, 03_28_59 PM.png",
+      "url": "/products/she/sets-SE/SE-501/life/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_28_59%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/life/set15_beige_lifestyle.jpg",
+      "url": "/products/she/sets-SE/SE-501/life/set15_beige_lifestyle.jpg",
+      "realCode": "SE-501",
+      "color": "beige",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-501/life/set15_black_lifestyle.jpg",
+      "url": "/products/she/sets-SE/SE-501/life/set15_black_lifestyle.jpg",
+      "realCode": "SE-501",
+      "color": "black",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-501/life/set15_white_lifestyle.jpg",
+      "url": "/products/she/sets-SE/SE-501/life/set15_white_lifestyle.jpg",
+      "realCode": "SE-501",
+      "color": "white",
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/sets-SE/SE-501/white pord/ChatGPT Image Sep 30, 2026, 03_31_00 PM.png",
+      "url": "/products/she/sets-SE/SE-501/white%20pord/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_31_00%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/white pord/ChatGPT Image Sep 30, 2026, 03_32_02 PM.png",
+      "url": "/products/she/sets-SE/SE-501/white%20pord/ChatGPT%20Image%20Sep%2030%2C%202026%2C%2003_32_02%20PM.png",
+      "realCode": "SE-501",
+      "color": null,
+      "kind": "other"
+    },
+    {
+      "file": "she/sets-SE/SE-501/white pord/set15_beige_product.jpg",
+      "url": "/products/she/sets-SE/SE-501/white%20pord/set15_beige_product.jpg",
+      "realCode": "SE-501",
+      "color": "beige",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-501/white pord/set15_burgundy_product.jpg",
+      "url": "/products/she/sets-SE/SE-501/white%20pord/set15_burgundy_product.jpg",
+      "realCode": "SE-501",
+      "color": "burgundy",
+      "kind": "front"
+    },
+    {
+      "file": "she/sets-SE/SE-501/white pord/set15_white_product.jpg",
+      "url": "/products/she/sets-SE/SE-501/white%20pord/set15_white_product.jpg",
+      "realCode": "SE-501",
+      "color": "white",
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SE-249/SE-249_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SE-249/SE-249_Hero.jpg",
+      "realCode": "SE-249",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SE-249/SE-249_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SE-249/SE-249_Lifestyle_Model.jpg",
+      "realCode": "SE-249",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SE-249/SE-249_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SE-249/SE-249_Product_4_Angles.png",
+      "realCode": "SE-249",
+      "color": null,
+      "kind": "angles4"
+    },
+    {
+      "file": "she/she_final_18_images/SE-484/SE-484_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SE-484/SE-484_Hero.jpg",
+      "realCode": "SE-484",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SE-484/SE-484_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SE-484/SE-484_Lifestyle_Model.jpg",
+      "realCode": "SE-484",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SE-484/SE-484_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SE-484/SE-484_Product_4_Angles.png",
+      "realCode": "SE-484",
+      "color": null,
+      "kind": "angles4"
+    },
+    {
+      "file": "she/she_final_18_images/SSS-5002/SSS-5002_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SSS-5002/SSS-5002_Hero.jpg",
+      "realCode": "SSS-5002",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SSS-5002/SSS-5002_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SSS-5002/SSS-5002_Lifestyle_Model.jpg",
+      "realCode": "SSS-5002",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SSS-5002/SSS-5002_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SSS-5002/SSS-5002_Product_4_Angles.png",
+      "realCode": "SSS-5002",
+      "color": null,
+      "kind": "angles4"
+    },
+    {
+      "file": "she/she_final_18_images/SX-245/SX-245_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SX-245/SX-245_Hero.jpg",
+      "realCode": "SX-245",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SX-245/SX-245_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SX-245/SX-245_Lifestyle_Model.jpg",
+      "realCode": "SX-245",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SX-245/SX-245_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SX-245/SX-245_Product_4_Angles.png",
+      "realCode": "SX-245",
+      "color": null,
+      "kind": "angles4"
+    },
+    {
+      "file": "she/she_final_18_images/SX-247/SX-247_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SX-247/SX-247_Hero.jpg",
+      "realCode": "SX-247",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SX-247/SX-247_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SX-247/SX-247_Lifestyle_Model.jpg",
+      "realCode": "SX-247",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SX-247/SX-247_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SX-247/SX-247_Product_4_Angles.png",
+      "realCode": "SX-247",
+      "color": null,
+      "kind": "angles4"
+    },
+    {
+      "file": "she/she_final_18_images/SXS-223/SXS-223_Hero.jpg",
+      "url": "/products/she/she_final_18_images/SXS-223/SXS-223_Hero.jpg",
+      "realCode": "SXS-223",
+      "color": null,
+      "kind": "front"
+    },
+    {
+      "file": "she/she_final_18_images/SXS-223/SXS-223_Lifestyle_Model.jpg",
+      "url": "/products/she/she_final_18_images/SXS-223/SXS-223_Lifestyle_Model.jpg",
+      "realCode": "SXS-223",
+      "color": null,
+      "kind": "lifestyle"
+    },
+    {
+      "file": "she/she_final_18_images/SXS-223/SXS-223_Product_4_Angles.png",
+      "url": "/products/she/she_final_18_images/SXS-223/SXS-223_Product_4_Angles.png",
+      "realCode": "SXS-223",
+      "color": null,
+      "kind": "angles4"
+    }
+  ]
+}
