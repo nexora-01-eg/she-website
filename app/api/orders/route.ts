@@ -5,6 +5,7 @@ import { INVENTORY_ROWS } from '@/data/seed';
 import { DELIVERY_ZONES } from '@/data/schema';
 import { orderMessage } from '@/lib/wa';
 import { SHE_CONFIG } from '@/data/config';
+import { isSupabaseConfigured, supabaseService } from '@/lib/supabase';
 
 const MOBILE_RE = /^01[0125]\d{8}$/;
 const priceByModel = new Map(INVENTORY_ROWS.map((r) => [r.modelCode, r.price]));
@@ -17,13 +18,22 @@ function code(): string {
   return `SHE-${ymd}-${r}`;
 }
 
+export interface OrderItemInput {
+  modelCode: string;
+  color: string;
+  size?: string;
+  qty: number;
+  price: number;
+}
+
 /**
- * POST /api/orders — validate → store (data/orders/*.json now; Supabase later,
- * same payload shape) → return order code + WhatsApp href.
+ * POST /api/orders — validate → store → return { code, waHref } (contract unchanged).
+ * Storage: Supabase `orders` when configured; file fallback for local dev only.
+ * On hosted read-only runtimes without Supabase keys → 503 (never silently drop orders).
  */
 export async function POST(req: Request) {
   let body: {
-    items?: Array<{ modelCode: string; color: string; size?: string; qty: number; price: number }>;
+    items?: OrderItemInput[];
     name?: string; phone?: string; zone?: string; address?: string; notes?: string; utm?: string;
   };
   try { body = await req.json(); } catch { return NextResponse.json({ error: 'بيانات غير صالحة' }, { status: 400 }); }
@@ -54,16 +64,23 @@ export async function POST(req: Request) {
     code: orderCode,
     items, name: body.name.trim(), phone: body.phone.trim(),
     zone: body.zone, address: body.address.trim(), notes: (body.notes ?? '').trim(),
-    total, deliveryFee: 'TODO', channel: 'form', utm: body.utm ?? null,
-    createdAt: new Date().toISOString(), source: 'seed-prices',
+    total, delivery_fee: 'TODO', channel: 'form', utm: body.utm ?? null,
+    source: 'seed-prices',
   };
 
-  try {
-    const dir = join(process.cwd(), 'data', 'orders');
-    mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, `${orderCode}.json`), JSON.stringify(record, null, 2), 'utf8');
-  } catch {
-    return NextResponse.json({ error: 'تعذر حفظ الطلب — حاولي تاني' }, { status: 500 });
+  if (isSupabaseConfigured()) {
+    const { error } = await supabaseService().from('orders').insert(record);
+    if (error) return NextResponse.json({ error: 'تعذر حفظ الطلب — حاولي تاني' }, { status: 500 });
+  } else if (process.env.VERCEL) {
+    return NextResponse.json({ error: 'الطلبات غير متاحة حالياً — اطلبي واتساب مباشرة' }, { status: 503 });
+  } else {
+    try {
+      const dir = join(process.cwd(), 'data', 'orders');
+      mkdirSync(dir, { recursive: true });
+      writeFileSync(join(dir, `${orderCode}.json`), JSON.stringify({ ...record, createdAt: new Date().toISOString() }, null, 2), 'utf8');
+    } catch {
+      return NextResponse.json({ error: 'تعذر حفظ الطلب — حاولي تاني' }, { status: 500 });
+    }
   }
 
   const text = orderMessage(items.map((i) => ({

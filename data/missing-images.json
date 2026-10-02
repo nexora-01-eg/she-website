@@ -1,36 +1,115 @@
 {
-  "generatedAt": "2026-10-02T01:39:17.332Z",
-  "rule": "Launch minimum = one front image per variant. Angles optional; never render empty/broken slots.",
-  "confirmedFronts": 0,
-  "note": "No seed variant has a CONFIRMED front (seed codes differ from real zip codes). Shop shows family+color illustrative images with badge; placeholders elsewhere.",
-  "familyColorsWithFront": {
-    "bags": [
-      "white",
-      "black",
-      "gold",
-      "silver",
-      "beige",
-      "brown",
-      "burgundy"
-    ],
-    "shoes": [
-      "beige",
-      "black",
-      "brown",
-      "burgundy",
-      "white"
-    ]
-  },
-  "cellsWithoutFamilyColorImage": [
+  "generatedAt": "2026-10-02T22:23:02.282Z",
+  "mode": "strict-own-code-color",
+  "rule": "Launch minimum = one front image per variant (own code+color). Angles optional; never render empty/broken slots.",
+  "linkedModels": 0,
+  "note": "MODEL_TO_REAL empty until inventory export. All 64 seed variants render monogram placeholders.",
+  "variantsWithoutOwnFront": 64,
+  "cells": [
+    {
+      "subsection": "soiree-bags",
+      "color": "black",
+      "pieces": 15
+    },
+    {
+      "subsection": "soiree-bags",
+      "color": "beige",
+      "pieces": 12
+    },
+    {
+      "subsection": "soiree-bags",
+      "color": "white",
+      "pieces": 14
+    },
+    {
+      "subsection": "soiree-bags",
+      "color": "burgundy",
+      "pieces": 3
+    },
+    {
+      "subsection": "soiree-bags",
+      "color": "brown",
+      "pieces": 3
+    },
     {
       "subsection": "soiree-bags",
       "color": "denim",
       "pieces": 2
     },
     {
+      "subsection": "soiree-bags",
+      "color": "gold",
+      "pieces": 4
+    },
+    {
+      "subsection": "soiree-bags",
+      "color": "silver",
+      "pieces": 1
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "black",
+      "pieces": 10
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "beige",
+      "pieces": 8
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "white",
+      "pieces": 10
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "burgundy",
+      "pieces": 2
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "brown",
+      "pieces": 2
+    },
+    {
       "subsection": "in-she-only",
       "color": "denim",
       "pieces": 1
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "gold",
+      "pieces": 2
+    },
+    {
+      "subsection": "in-she-only",
+      "color": "silver",
+      "pieces": 1
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "black",
+      "pieces": 71
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "beige",
+      "pieces": 58
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "white",
+      "pieces": 66
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "burgundy",
+      "pieces": 13
+    },
+    {
+      "subsection": "formal-heels",
+      "color": "brown",
+      "pieces": 13
     },
     {
       "subsection": "formal-heels",
@@ -49,6 +128,31 @@
     },
     {
       "subsection": "soiree-heels",
+      "color": "black",
+      "pieces": 28
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "beige",
+      "pieces": 23
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "white",
+      "pieces": 26
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "burgundy",
+      "pieces": 5
+    },
+    {
+      "subsection": "soiree-heels",
+      "color": "brown",
+      "pieces": 5
+    },
+    {
+      "subsection": "soiree-heels",
       "color": "denim",
       "pieces": 4
     },
@@ -64,6 +168,31 @@
     },
     {
       "subsection": "ballerina",
+      "color": "black",
+      "pieces": 28
+    },
+    {
+      "subsection": "ballerina",
+      "color": "beige",
+      "pieces": 23
+    },
+    {
+      "subsection": "ballerina",
+      "color": "white",
+      "pieces": 26
+    },
+    {
+      "subsection": "ballerina",
+      "color": "burgundy",
+      "pieces": 5
+    },
+    {
+      "subsection": "ballerina",
+      "color": "brown",
+      "pieces": 5
+    },
+    {
+      "subsection": "ballerina",
       "color": "denim",
       "pieces": 4
     },
@@ -76,6 +205,31 @@
       "subsection": "ballerina",
       "color": "silver",
       "pieces": 2
+    },
+    {
+      "subsection": "sneakers",
+      "color": "black",
+      "pieces": 86
+    },
+    {
+      "subsection": "sneakers",
+      "color": "beige",
+      "pieces": 68
+    },
+    {
+      "subsection": "sneakers",
+      "color": "white",
+      "pieces": 80
+    },
+    {
+      "subsection": "sneakers",
+      "color": "burgundy",
+      "pieces": 17
+    },
+    {
+      "subsection": "sneakers",
+      "color": "brown",
+      "pieces": 17
     },
     {
       "subsection": "sneakers",
@@ -94,6 +248,31 @@
     },
     {
       "subsection": "suede-sneakers",
+      "color": "black",
+      "pieces": 28
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "beige",
+      "pieces": 23
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "white",
+      "pieces": 26
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "burgundy",
+      "pieces": 5
+    },
+    {
+      "subsection": "suede-sneakers",
+      "color": "brown",
+      "pieces": 5
+    },
+    {
+      "subsection": "suede-sneakers",
       "color": "denim",
       "pieces": 4
     },
@@ -108,7 +287,7 @@
       "pieces": 2
     }
   ],
-  "realCodesWithFront": [
+  "realCodesWithDerivatives": [
     "SBJ752",
     "SBJ779",
     "SBJ781",

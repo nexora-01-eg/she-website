@@ -45,14 +45,14 @@ export function ProductCard({ v, lang = 'ar' }: { v: ShopVariant; lang?: 'ar' | 
         {v.front ? (
           <img
             src={hover && second ? second : v.front.url}
+            srcSet={hover && second && v.gallery[1] ? v.gallery[1].srcSet : v.front.srcSet}
+            sizes="(max-width: 640px) 50vw, 240px"
             alt={lang === 'ar' ? v.name.ar : v.name.en}
             loading="lazy"
             style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-m)', background: '#eee' }}
           />
         ) : <Monogram code={v.modelCode} />}
-      </a>
-      {v.front?.illustrative && <small style={{ opacity: 0.55 }}>صورة توضيحية — صورة الموديل قريباً</small>}
-      <div style={{ display: 'flex', gap: 6, marginTop: 8 }} aria-label="colors">
+      </a>      <div style={{ display: 'flex', gap: 6, marginTop: 8 }} aria-label="colors">
         {siblings.map((s) => (
           <a key={s.color} href={`/product/${s.slug}?color=${s.color}`} title={s.colorName.ar} aria-label={s.colorName.ar}
             style={{ opacity: s.status === 'out' ? 0.35 : 1 }}>

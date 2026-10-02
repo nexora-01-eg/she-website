@@ -5,11 +5,14 @@ import { ProductCard } from '@/components/ProductCard';
 import { isSellableOnline } from '@/lib/inventory';
 
 /**
- * NOTE (env constraint): prerendering product pages OOMs the static worker on
- * the 8GB/1GB-free build machine, so products render dynamically (SSR +
- * metadata intact). Re-enable generateStaticParams on CI (see Launch-Ready item 5).
+ * Products prerender at build time with hourly ISR (Vercel builds, not the
+ * 8GB local box). Gallery renders ONLY existing angles (never empty slots).
  */
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return MODEL_CONTENT.map((c) => ({ slug: c.slug }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -72,7 +75,7 @@ export default async function ProductPage({
           {gallery.length > 0 ? (
             <div style={{ display: 'flex', gap: 10, overflowX: 'auto', scrollSnapType: 'x mandatory', paddingBottom: 8 }}>
               {gallery.map((g, i) => (
-                <img key={g.url + i} src={g.url} alt={`${content.name.ar} — ${g.kind}`}
+                <img key={g.url + i} src={g.url} srcSet={g.srcSet} sizes="(max-width: 900px) 100vw, 480px" alt={`${content.name.ar} — ${g.kind}`}
                   loading={i === 0 ? 'eager' : 'lazy'}
                   style={{ width: 'min(100%, 480px)', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-l)', scrollSnapAlign: 'start', flexShrink: 0, background: '#eee' }} />
               ))}

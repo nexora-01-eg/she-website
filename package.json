@@ -11,13 +11,17 @@
     "lint": "tsc --noEmit",
     "map-images": "node scripts/map-web-images.mjs",
     "catalog": "node scripts/catalog-zip.mjs",
+    "codes-csv": "node scripts/codes-csv.mjs",
+    "build-images": "node scripts/build-images.mjs",
     "link-images": "node scripts/link-images.mjs",
     "verify-seed": "node scripts/verify-seed.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

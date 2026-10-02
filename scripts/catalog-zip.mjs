@@ -8,7 +8,7 @@
  * - Writes data/missing-images.json (seed variants with no confirmed front image = all 64, honest)
  * Run: node scripts/catalog-zip.mjs
  */
-import { readdirSync, statSync, writeFileSync, existsSync } from 'node:fs';
+import { readdirSync, statSync, writeFileSync, existsSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -138,49 +138,34 @@ for (const f of webFiles) {
 }
 writeFileSync(join(root, 'data', 'image-mapping.csv'), '\uFEFF' + csvRows.join('\n'), 'utf8');
 
-// ---- missing-images report: per seed-variant, what imagery exists? ----
-// Seed codes (BGS01…) are placeholders; zip uses real codes. Until the owner
-// confirms image-mapping.csv, no variant has a CONFIRMED front. Family-level
-// matches (same section family + color) are illustrative only.
-const BAGS_PX = ['SBJ', 'SBS', 'SE-500'];
-const SHOES_PX = ['SE-', 'SX-', 'SSS-', 'SE-501'];
-const inFam = (code, px) => px.some((p) => code.startsWith(p));
-const famColorsWithFront = (px) => {
-  const s = new Set();
-  for (const f of catalog) {
-    if (f.realCode && inFam(f.realCode, px) && f.color && (f.kind === 'front' || f.kind === 'angles4')) s.add(f.color);
-  }
-  return [...s];
-};
-const bagsColors = famColorsWithFront(BAGS_PX);
-const shoesColors = famColorsWithFront(SHOES_PX);
-const seedText = (await import('node:fs')).readFileSync(join(root, 'data', 'seed.ts'), 'utf8');
-const rowRe2 = /['"]?(soiree-bags|in-she-only|formal-heels|soiree-heels|ballerina|sneakers|suede-sneakers)['"]?\s*:\s*\{([^}]+)\}/g;
-const cellRe2 = /(black|beige|white|burgundy|brown|denim|gold|silver):\s*(\d+)/g;
-const withoutFamilyColor = [];
+// ---- missing-images report (STRICT: own code+color only) ----
+// MODEL_TO_REAL is empty until the inventory export locks it, so no seed
+// variant has its own front. Customer pages show monogram placeholders only.
+const seedText = readFileSync(join(root, 'data', 'seed.ts'), 'utf8');
+const rowRe3 = /['"]?(soiree-bags|in-she-only|formal-heels|soiree-heels|ballerina|sneakers|suede-sneakers)['"]?\s*:\s*\{([^}]+)\}/g;
+const cellRe3 = /(black|beige|white|burgundy|brown|denim|gold|silver):\s*(\d+)/g;
+const cellsAll = [];
 {
   let rm;
-  while ((rm = rowRe2.exec(seedText))) {
-    const sub = rm[1];
-    const isBags = sub === 'soiree-bags' || sub === 'in-she-only';
-    const pool = isBags ? bagsColors : shoesColors;
+  while ((rm = rowRe3.exec(seedText))) {
     let cm;
-    while ((cm = cellRe2.exec(rm[2]))) {
-      if (!pool.includes(cm[1])) withoutFamilyColor.push({ subsection: sub, color: cm[1], pieces: Number(cm[2]) });
+    while ((cm = cellRe3.exec(rm[2]))) {
+      cellsAll.push({ subsection: rm[1], color: cm[1], pieces: Number(cm[2]) });
     }
   }
 }
 const missing = {
   generatedAt: new Date().toISOString(),
-  rule: 'Launch minimum = one front image per variant. Angles optional; never render empty/broken slots.',
-  confirmedFronts: 0,
-  note: 'No seed variant has a CONFIRMED front (seed codes differ from real zip codes). Shop shows family+color illustrative images with badge; placeholders elsewhere.',
-  familyColorsWithFront: { bags: bagsColors, shoes: shoesColors },
-  cellsWithoutFamilyColorImage: withoutFamilyColor,
-  realCodesWithFront: coverage.filter((c) => c.hasFront && c.realCode !== 'UNCLASSIFIED').map((c) => c.realCode),
+  mode: 'strict-own-code-color',
+  rule: 'Launch minimum = one front image per variant (own code+color). Angles optional; never render empty/broken slots.',
+  linkedModels: 0,
+  note: 'MODEL_TO_REAL empty until inventory export. All 64 seed variants render monogram placeholders.',
+  variantsWithoutOwnFront: 64,
+  cells: cellsAll,
+  realCodesWithDerivatives: coverage.filter((c) => c.hasFront && c.realCode !== 'UNCLASSIFIED').map((c) => c.realCode),
 };
 writeFileSync(join(root, 'data', 'missing-images.json'), JSON.stringify(missing, null, 2), 'utf8');
 
 console.log(`[catalog] product files: ${files.length}, real codes: ${coverage.length - (byCode.UNCLASSIFIED ? 1 : 0)}, unclassified: ${byCode.UNCLASSIFIED?.files ?? 0}`);
 console.log(`[catalog] web files in CSV: ${webFiles.length} → data/image-mapping.csv`);
-console.log(`[catalog] codes with front/angles4: ${missing.realCodesWithFront.length}`);
+console.log(`[catalog] codes with front/angles4: ${missing.realCodesWithDerivatives.length}`);
