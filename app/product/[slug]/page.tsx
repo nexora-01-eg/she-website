@@ -3,27 +3,16 @@ import { SHOP_INDEX } from '@/lib/shop';
 import { BuyBox } from '@/components/BuyBox';
 import { ProductCard } from '@/components/ProductCard';
 import { isSellableOnline } from '@/lib/inventory';
-import { demoProductBySlug, ALL_DEMO_PRODUCTS } from '@/data/commercial';
-import { DemoProductDetail } from '@/components/DemoProductDetail';
-import { DemoProductCard } from '@/components/commercial';
 
 /**
- * NOTE (env constraint): prerendering all product pages OOMs the static
- * worker on the small build machine, so products render dynamically
- * (SSR + metadata intact).
+ * NOTE (env constraint): prerendering product pages OOMs the static worker on
+ * the 8GB/1GB-free build machine, so products render dynamically (SSR +
+ * metadata intact). Re-enable generateStaticParams on CI (see Launch-Ready item 5).
  */
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const demo = demoProductBySlug(slug);
-  if (demo) {
-    return {
-      title: `${demo.name.ar} (${demo.code})`,
-      description: `${demo.name.ar} — ${demo.name.en}. اطلبي على واتساب.`,
-      alternates: { canonical: `/product/${demo.slug}` },
-    };
-  }
   const c = MODEL_CONTENT.find((x) => x.slug === slug);
   if (!c) return { title: 'غير موجود' };
   return {
@@ -34,9 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 /**
- * Product page — demo catalog first, seed/inventory second.
- * Demo path: editorial first + commerce second (§26).
- * Seed path: existing gallery + BuyBox behavior preserved.
+ * Product page — editorial first, commerce second, but price/color/size/order
+ * visible without hunting. Gallery renders ONLY existing angles (never empty slots).
  */
 export default async function ProductPage({
   params, searchParams,
@@ -46,37 +34,15 @@ export default async function ProductPage({
 }) {
   const { slug } = await params;
   const { color } = await searchParams;
-
-  // --- Demo catalog path (§26) ---
-  const demo = demoProductBySlug(slug);
-  if (demo) {
-    const related = ALL_DEMO_PRODUCTS.filter(
-      (p) => p.slug !== demo.slug && (p.collection === demo.collection || p.category === demo.category)
-    ).slice(0, 4);
-    return (
-      <div style={{ paddingBlock: 24 }}>
-        <DemoProductDetail p={demo} />
-        {related.length > 0 && (
-          <section className="wrap section" aria-label="Related products">
-            <h2>كمّلي اللوك</h2>
-            <div className="tiles">
-              {related.map((p) => <DemoProductCard key={p.slug} p={p} />)}
-            </div>
-          </section>
-        )}
-      </div>
-    );
-  }
-
-  // --- Seed/inventory path (preserved) ---
   const content = MODEL_CONTENT.find((c) => c.slug === slug);
   if (!content) return <div className="wrap section"><h1>الموديل مش موجود</h1><a href="/shop">عودة للشوب</a></div>;
 
   const variants = SHOP_INDEX.filter((v) => v.modelCode === content.modelCode);
   const sel = variants.find((v) => v.color === color) ?? variants[0];
-  const gallery = sel.gallery;
+  const gallery = sel.gallery; // only existing angles
   const avail = sel.status === 'out' ? 'https://schema.org/OutOfStock' : sel.status === 'low' ? 'https://schema.org/LimitedAvailability' : 'https://schema.org/InStock';
 
+  // Complete the look (real data only): same color, bag↔shoes pairing, same occasion
   const sameColor = SHOP_INDEX.filter((v) => v.color === sel.color && v.modelCode !== sel.modelCode && v.qty > 0).slice(0, 4);
   const opposite = sel.section === 'shoes' ? 'bags' : 'shoes';
   const pair = SHOP_INDEX.filter((v) => v.section === opposite && v.color === sel.color && v.qty > 0).slice(0, 4);
@@ -87,7 +53,12 @@ export default async function ProductPage({
     '@type': 'Product',
     name: `${content.name.ar} ${content.modelCode}`,
     sku: `${content.modelCode}-${sel.color}`,
-    offers: { '@type': 'Offer', priceCurrency: 'EGP', price: sel.price, availability: avail },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'EGP',
+      price: sel.price,
+      availability: avail,
+    },
   };
 
   return (
@@ -96,6 +67,7 @@ export default async function ProductPage({
       <p style={{ opacity: 0.6 }}><a href="/shop">الشوب</a> / {content.name.ar}</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 24 }} className="product-grid">
         <style>{`@media(min-width:900px){.product-grid{grid-template-columns:1.1fr .9fr !important}}`}</style>
+        {/* Gallery — existing angles only */}
         <div>
           {gallery.length > 0 ? (
             <div style={{ display: 'flex', gap: 10, overflowX: 'auto', scrollSnapType: 'x mandatory', paddingBottom: 8 }}>
@@ -120,6 +92,7 @@ export default async function ProductPage({
             )}
           </div>
         </div>
+        {/* Commerce */}
         <div>
           <p style={{ color: 'var(--she-pink)', margin: 0 }}>{sel.subName.ar}</p>
           <h1 style={{ marginTop: 4 }}>{content.name.ar}</h1>

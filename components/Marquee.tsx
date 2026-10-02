@@ -1,14 +1,12 @@
-import { PROMO_MESSAGES } from '@/data/commercial';
+import { SHE_CONFIG } from '@/data/config';
 
-/**
- * Top promotional marquee (§06) — ~7 rotating offers, fast but readable,
- * campaign ticker feel. Content controlled by data/commercial.ts.
- */
+/** Promotional marquee — only active:true messages. Direction respects RTL via CSS. */
 export function Marquee({ lang }: { lang: 'ar' | 'en' }) {
-  const text = PROMO_MESSAGES.map((m) => (lang === 'ar' ? m.ar : m.en)).join('  ✦  ');
+  const items = SHE_CONFIG.marquee.filter((m) => m.active);
+  const text = items.map((m) => (lang === 'ar' ? m.ar : m.en)).join('  ✦  ');
   return (
-    <div className="marquee" role="note" aria-label="Promotions">
-      <div className="marquee-track marquee-fast" aria-hidden="false">
+    <div className="marquee" role="note" aria-label="Announcements">
+      <div className="marquee-track" aria-hidden="false">
         <span>{text} ✦ {text}</span>
       </div>
     </div>

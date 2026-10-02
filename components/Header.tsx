@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { LogoLockup } from './Logo';
 import { SHE_CONFIG } from '@/data/config';
 import { useAtelier } from '@/lib/atelier';
-import { SoundToggle } from './commercial';
 
 const NAV = [
   { href: '/', label: { ar: 'الرئيسية', en: 'HOME' } },
@@ -48,13 +47,7 @@ export function Header({ lang }: { lang: 'ar' | 'en' }) {
             👜<span className="count digits">{mounted ? count : 0}</span>
           </button>
           <a href={lang === 'ar' ? '/en' : '/'} aria-label="Language">{lang === 'ar' ? 'EN' : 'AR'}</a>
-          <span className="header-socials">
-            <a href={SHE_CONFIG.brand.instagram} aria-label="Instagram" target="_blank" rel="noreferrer">◍</a>
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="TikTok">♪</a>
-            <a href="#" aria-label="WhatsApp">✆</a>
-          </span>
-          <SoundToggle />
+          <a href={SHE_CONFIG.brand.instagram} aria-label="Instagram" target="_blank" rel="noreferrer">◍</a>
         </div>
       </div>
     </header>
