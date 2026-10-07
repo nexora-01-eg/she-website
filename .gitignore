@@ -11,7 +11,8 @@ node_modules
 out
 dist
 
-# Env
+# Env (never commit real secrets — keys come from .env.local / Vercel env only)
+.env
 *.local
 .env*.local
 
@@ -28,3 +29,4 @@ data/snapshots/
 # Junction target: D:\BAGS SBS\products-staging (extracted BAGS SBS.zip)
 public/products/
 data/orders/
+data/inner-circle/

@@ -27,11 +27,21 @@ checkFile('data/seed.ts', ["source: 'seed'", 'source:"seed"']);
 checkFile('data/config.ts', ['TODO']);
 checkFile('data/schema.ts', ["fee: 'TODO'"]);
 
+// Strict image gate (Launch-Ready): no monograms in production — every
+// customer-visible variant must have a real front for its own real code+color.
+try {
+  const missing = JSON.parse(readFileSync(join(root, 'data', 'missing-images.json'), 'utf8'));
+  const n = missing.variantsWithoutOwnFront ?? 0;
+  if (n > 0) problems.push(`data/missing-images.json: ${n} variants without own front image`);
+} catch {
+  problems.push('data/missing-images.json: MISSING or unreadable');
+}
+
 if (problems.length) {
   console.log('\n[SHE guard] findings:');
   for (const p of problems) console.log('  - ' + p);
   if (strict) {
-    console.error('\n[SHE guard] FAIL: seed/TODO data present. Replace seed with real export + fill config before launch.\n');
+    console.error('\n[SHE guard] FAIL: seed/TODO/imageless variants present. Replace seed with real export + fill config + link own front images before launch.\n');
     process.exit(1);
   } else {
     console.log('\n[SHE guard] WARN (dev): seed/TODO expected in Phase A. Strict build (`build:strict`) will fail until replaced.\n');

@@ -14,7 +14,8 @@
     "codes-csv": "node scripts/codes-csv.mjs",
     "build-images": "node scripts/build-images.mjs",
     "link-images": "node scripts/link-images.mjs",
-    "verify-seed": "node scripts/verify-seed.mjs"
+    "verify-seed": "node scripts/verify-seed.mjs",
+    "guard:writes": "node scripts/guard-writes.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
