@@ -30,9 +30,20 @@ function staged() {
   }
 }
 
+function isIgnored(f) {
+  try {
+    execSync(`git check-ignore -q "${f.replace(/"/g, '')}"`, { cwd: root, stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function check(files) {
-  const bad = files.filter((f) => !OWNED.some((o) => (o.endsWith('/') ? f.startsWith(o) : f === o)));
-  return bad;
+  // Ignored-path cleanup (e.g. removing a committed build artifact) is always fine.
+  const relevant = files.filter((f) => !isIgnored(f));
+  const bad = relevant.filter((f) => !OWNED.some((o) => (o.endsWith('/') ? f.startsWith(o) : f === o)));
+  return { bad, skipped: files.length - relevant.length };
 }
 
 if (process.argv.includes('--install')) {
@@ -45,7 +56,7 @@ if (process.argv.includes('--install')) {
 }
 
 const files = staged();
-const bad = check(files);
+const { bad, skipped } = check(files);
 if (bad.length) {
   console.error('\n[write-guard] BLOCKED — staged files outside owned areas (possible external overwrite):');
   for (const f of bad) console.error('  ! ' + f);

@@ -1,6 +1,7 @@
 import { SUBSECTIONS, COLORS } from '@/data/schema';
 import { piecesBySubsection, piecesByColor, totalPieces, modelsCount, variantsCount } from '@/lib/inventory';
 import { SEED_META } from '@/data/seed';
+import { Hero } from '@/components/Hero';
 
 /**
  * Phase A home — intentional with few items (26 models).
@@ -12,19 +13,9 @@ export default function Home() {
   const byColor = piecesByColor();
   return (
     <div className="wrap">
-      {/* HERO — typographic + butterfly fallback. No fake storefront imagery. */}
-      <section className="section" aria-label="SHE hero">
-        <p className="latin-track" style={{ color: 'var(--she-pink)' }}>BE YOU .. ALWAYS</p>
-        <h1>BE YOU.<br />ALWAYS.</h1>
-        <p>شنط وشوز بستايلك انتي — اختاري لونك ومقاسك واطلبي على واتساب في دقيقة.</p>
-        <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
-          <a className="btn btn-primary" href="/shop">تسوقي الآن / SHOP NOW</a>
-          <a className="btn btn-ghost" href="/collections">EXPLORE THE COLLECTION</a>
-        </div>
-        <p style={{ opacity: 0.65, fontSize: 13, marginTop: 12 }}>
-          <span className="digits">{totalPieces()}</span> قطعة · <span className="digits">{modelsCount()}</span> موديل · <span className="digits">{variantsCount()}</span> لون — كل الأرقام محسوبة من البيانات (seed {SEED_META.reportNo}).
-        </p>
-      </section>
+      {/* HERO — signature experience (Concept C + editorial rails). No fake storefront imagery. */}
+      <Hero pieces={totalPieces()} models={modelsCount()} variants={variantsCount()} />
+      <p style={{ opacity: 0.55, fontSize: 12 }}>seed {SEED_META.reportNo} — الأرقام محسوبة من البيانات.</p>
 
       {/* SHOP BY WORLD — 7 sub-sections as editorial tiles with real counts */}
       <section className="section" aria-label="Shop by world">

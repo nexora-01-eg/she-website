@@ -10,6 +10,7 @@ node_modules
 .next
 out
 dist
+tsconfig.tsbuildinfo
 
 # Env (never commit real secrets — keys come from .env.local / Vercel env only)
 .env

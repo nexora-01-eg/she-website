@@ -24,6 +24,17 @@ export const SHE_CONFIG = {
     statements: ['BE YOU.', 'OWN YOUR STYLE.', 'BE RARE.', 'MADE TO BE SEEN.'],
     // Config picks 7 featured models (real model codes, Phase B wires to imagery)
     featured: ['BGS01', 'FML01', 'SNK01', 'SRH01', 'BAL01', 'SUE01', 'EXC01'],
+    // Editorial hero rails: real SHE campaign shots (brand ambience, not product claims).
+    // Replaced by branch-video posters when hero.media arrives (Concept A).
+    posters: [
+      '/p/SBS685/black_front_0_960.webp',
+      '/p/SE-500/black_lifestyle_0_960.webp',
+      '/p/SBS613/nocolor_front_0_960.webp',
+      '/p/SE-501/black_front_0_960.webp',
+      '/p/SBJ787/nocolor_lifestyle_0_960.webp',
+      '/p/SE-500/beige_lifestyle_0_960.webp',
+      '/p/SBJ752/nocolor_front_0_960.webp',
+    ],
   },
   marquee: [
     // Only messages that are currently true. Speed reacts slightly to scroll; direction respects RTL.
